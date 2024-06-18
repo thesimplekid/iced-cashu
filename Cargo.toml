@@ -1,0 +1,17 @@
+[package]
+name = "iced-cashu"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { git = "https://github.com/iced-rs/iced", rev = "6c1027a", features = ["debug", "tokio", "svg", "qr_code", "advanced"] }
+cdk = { git = "https://github.com/cashubtc/cdk", rev = "b066b92", features = ["nostr", "wallet"] }
+cdk-sqlite = { git = "https://github.com/cashubtc/cdk", rev = "b066b92", features = ["nostr", "wallet"] }
+tokio = { version = "1.38.0", features = ["full"] }
+rand = "0.8.5"
+bip39 = { version = "2.0.0", features = ["rand"] }
+anyhow = "1.0.86"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+home = "0.5.9"
+ 
